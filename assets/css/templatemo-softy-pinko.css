@@ -108,7 +108,7 @@ global styles
 */
 html,
 body {
-  background: #fff;
+  background: rgb(242, 247, 247);
   font-family: "Raleway", sans-serif;
 }
 
@@ -315,7 +315,6 @@ a.main-button-slider {
   border-radius: 20px;
   padding: 12px 20px;
   background-color: #ff589e;
-  text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
@@ -333,7 +332,6 @@ a.main-button {
   border-radius: 20px;
   padding: 12px 20px;
   background-color: #8261ee;
-  text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
@@ -354,7 +352,6 @@ button.main-button {
   border-radius: 20px;
   padding: 12px 20px;
   background-color: #8261ee;
-  text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
@@ -374,24 +371,26 @@ header
 --------------------------------------------- 
 */
 .header-area {
-  position: fixed;
-  top: 30px;
+  /* position: fixed; */
+  /* top: 30px; */
   left: 0px;
   right: 0px;
-  z-index: 100;
+  /* z-index: 100; */
   height: 100px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+  color: white;
 }
 
-.header-area .main-nav {
+/* .header-area .main-nav {
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   border-radius: 40px;
   min-height: 80px;
   background: #fff;
-}
+} */
 
 .header-area .main-nav .logo {
   float: left;
@@ -445,6 +444,34 @@ header
   line-height: 40px;
   border: transparent;
   letter-spacing: 1px;
+}
+
+.dropdown-item{
+  color: black !important;
+}
+
+.dropdown-item:hover{
+  color: #ff589e !important;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+.nav-status {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+.nav-status:hover {
+  border: 1px solid #ff589e;
+}
+
+.nav-status-active {
+  border: 1px solid #ff589e;
+  border-radius: 10px;
+  padding: 0px;
 }
 
 .header-area .main-nav .nav li a:hover {
@@ -556,7 +583,7 @@ header
 }
 
 .header-area.header-sticky .nav li a {
-  color: #1e1e1e;
+  color: white;
 }
 
 .header-area.header-sticky .nav li a.active {
@@ -632,6 +659,188 @@ header
     display: flex !important;
   }
 }
+/* 
+---------------------------------------------
+login
+--------------------------------------------- 
+*/
+.login-feature {
+  padding-bottom: 50px;
+  margin-top: -220px;
+  z-index: 9;
+}
+
+.login-title {
+  padding-bottom: 50px;
+  color: white;
+  text-align: center;
+}
+
+.login-label{
+  margin-left: 10px;
+}
+
+.login {
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 10px;
+  padding: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.login-form input,
+.login-form textarea {
+  color: #777;
+  font-size: 14px;
+  border: 1px solid #eee;
+  width: 100%;
+  height: 40px;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  background-color: rgb(239, 239, 239);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-bottom: 10px;
+}
+
+.login-form textarea {
+  height: 150px;
+  resize: none;
+  padding: 20px;
+}
+
+.login-select{
+  color: #777;
+  font-size: 14px;
+  border: 1px solid #eee;
+  width: 100%;
+  height: 40px;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  background-color: rgb(239, 239, 239);
+}
+
+/* 
+---------------------------------------------
+Homepage
+--------------------------------------------- 
+*/
+
+.bantuan-list {
+  cursor: pointer;
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.bantuan-list:hover {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.bantuan-desc {
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.bantuan-icon {
+  color: white;
+}
+
+.kebajikan {
+  background-color: rgb(249, 223, 28);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.zamalah {
+  background-color: rgb(28, 54, 249);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+/* 
+---------------------------------------------
+application status
+--------------------------------------------- 
+*/
+.profile-page{
+  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+  color: white;
+}
+
+.profile-page .profile-header {
+  position: relative
+}
+
+.profile-page .profile-header .profile-image img {
+  border-radius: 50%;
+  width: 140px;
+  border: 3px solid #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+}
+
+.tag {
+  outline: none;
+  border: none;
+  font-size: smaller;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: #ee61cb;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.trigger-modal {
+  color: #007bff;
+}
+
+.trigger-modal:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 20px;
+}
 
 /* 
 ---------------------------------------------
@@ -639,16 +848,29 @@ welcome
 --------------------------------------------- 
 */
 .welcome-area {
+  overflow: auto;
+  background-color: #0f2666;
+  border: none;
+  padding: 15px 16px 60px;
+  margin-bottom: -80px;
+  min-height: 208px;
+  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+/* 
   overflow: hidden;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../images/banner-bg.png);
+  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; 
-  height: 100vh;
+  height: 30vh; */
+}
+
+.app-status {
+  height: 70vh;
+  margin-bottom: -400px;
 }
 
 .welcome-area .header-text {
@@ -716,7 +938,7 @@ welcome
 
 @media (max-width: 765px) {
   .welcome-area {
-    margin-bottom: 100px;
+    margin-bottom: 0px;
   }
   .welcome-area .header-text {
     top: 50% !important;
@@ -1444,6 +1666,7 @@ footer
 footer {
   background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
   padding-top: 30px;
+
 }
 
 footer .social {
@@ -1459,7 +1682,7 @@ footer .social li {
 
 footer .social li a {
   color: #9d5bd9;
-   text-align: center;
+  text-align: center;
   background-color: #fff;
   width: 36px;
   height: 36px;

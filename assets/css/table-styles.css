@@ -1,0 +1,77 @@
+
+table {
+  border-collapse: collapse;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+}
+
+.table thead tr {
+  background: #fff;
+  border-bottom: 4px solid #545155;
+}
+
+.table tbody th, .table tbody td {
+  border: none;
+  padding: 20px;
+  font-size: 14px;
+  background: #fff;
+  vertical-align: middle;
+}
+
+.table thead th {
+  border: none;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: gray;
+}
+
+.table tbody tr {
+  margin-bottom: 10px;
+  border-bottom: 4px solid rgb(242, 247, 247);
+}
+
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.table tbody td .email span:last-child {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.table tbody td.status span {
+  position: relative;
+  border-radius: 20px;
+  padding: 4px 10px 4px 10px;
+}
+
+.table tbody td.status .accepted,
+.accepted {
+  background: #cff6dd;
+  color: #1fa750;
+  position: relative;
+  border-radius: 20px;
+  padding: 4px 10px 4px 10px;
+}
+
+.table tbody td.status .waiting,
+.waiting {
+  background: #fdf5dd;
+  color: #cfa00c;
+  position: relative;
+  border-radius: 20px;
+  padding: 4px 10px 4px 10px;
+}
+
+.table tbody td.status .rejected, 
+.rejected {
+  background: #fddddd;
+  color: #cf0c0c;
+  position: relative;
+  border-radius: 20px;
+  padding: 4px 10px 4px 10px;
+}
