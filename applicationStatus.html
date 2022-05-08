@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>Softy Pinko - Bootstrap 4.0 Theme</title>
+<!--
+SOFTY PINKO
+https://templatemo.com/tm-535-softy-pinko
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-softy-pinko.css">
+
+    <link rel="stylesheet" href="assets/css/table-styles.css">
+
+    </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <!-- <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>   -->
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo">
+                            <h4 style="color:white">e<b>Bantuan</b> UM</h4>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="homepage.html">Utama</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                  Servis
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="tabungKebajikan.html">Tabung Kebajikan Kakitangan</a>
+                                  <a class="dropdown-item" href="#">Zamalah</a>
+                                </div>
+                              </li>
+                            <li class="nav-status-active"><a class="active" href="applicationStatus.html">Status Aplikasi</a></li>
+                            <li><a href="login.html"><i class="fa fa-sign-out mr-2" aria-hidden="true"></i>Log Keluar</a></li>
+                        </ul>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Profile Start***** -->
+    <div class="profile-page pt-3 pb-5">
+        <div class="profile-header">
+            <div class="row justify-content-center" style="width:70%; margin: auto;">
+                <div class="col-md-auto">
+                    <div class="profile-image float-md-right"> <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> </div>
+                </div>
+                <div class="col-md-7">
+                    <h4 class="my-2"><strong>Ahmad Ali bin Abu</strong></h4>
+                    <div>
+                        <button class="tag" disabled>Staff</button>
+                        <button class="tag" disabled>Ahli Zamalah</button>
+                    </div>
+                    <p class="mt-2">Pensyarah Senior di Universiti Malaya</p>
+                    <p><i>ahmadali@um.edu.my</i></p>
+                </div>                
+            </div>                 
+        </div>
+    </div>
+    <!-- ***** Profile End ***** -->
+
+     <!-- ***** Application Status Start***** -->
+     <div class="container">    
+         <div class="mb-5" style="width:70%; margin: auto;">
+             <h5 class="mt-5 mb-4 text-center"><b>Status Aplikasi</b></h5>
+             <div class="table-wrap">
+                <table class="table table-responsive-xl">
+                    <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Bantuan</th>
+                        <th scope="col">Tarikh Permohonan</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Klik</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Zamalah Bencana</td>
+                        <td>01/03/2020</td>
+                        <td class="status">
+                            <span class="accepted">Diterima</span>
+                            <div class="email">
+                                <span>Kemas kini: 01/03/2020</span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="trigger-modal" data-toggle="modal" data-target="#acceptedModal">Butiran</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Tabung Kebajikan</td>
+                        <td>01/03/2020</td>
+                        <td class="status">
+                            <span class="waiting">Sedang diproses</span>
+                            <div class="email">
+                                <span>Kemas kini: 01/03/2020</span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="trigger-modal" data-toggle="modal" data-target="#waitingModal">Butiran</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Zamalah Kemalangan</td>
+                        <td>01/03/2020</td>
+                        <td class="status">
+                            <span class="rejected">Ditolak</span>
+                            <div class="email">
+                                <span>Kemas kini: 01/03/2020</span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="trigger-modal" data-toggle="modal" data-target="#rejectedModal">Butiran</span>
+                            <span class="trigger-modal ml-2" onclick="href=''">Edit</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Zamalah Pendidkan</td>
+                        <td>01/03/2020</td>
+                        <td class="status">
+                            <span class="rejected">Ditolak</span>
+                            <div class="email">
+                                <span>Kemas kini: 01/03/2020</span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="trigger-modal" data-toggle="modal" data-target="#rejected2Modal">Butiran</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+         </div>
+    </div>
+    <!-- ***** Application Status ***** -->
+
+    <!-- ***** Modal Start ***** -->
+    <!--Diterima-->
+    <div class="modal fade" id="acceptedModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content rounded-0">
+            <div class="modal-body p-5">
+  
+                
+                <div class="main-content">
+                    
+                    <a href="#" class="close-btn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa fa-times-circle"></i></span></span>
+                    </a>
+
+                    <span class="accepted mr-1">Diterima</span>
+                    <b class="text-center">Permohonan Berjaya</b>
+                    <p class="mt-3">
+                        Tahniah! Permohonan anda telah berjaya.<br>
+                        Proses pembayaran akan mengambil masa dalam <b>2-3 minggu</b>.<br><br>
+                        Sila semak email anda dari semasa ke semasa untuk sebarang kemas kini.
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--Sedang diproses-->
+    <div class="modal fade" id="waitingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content rounded-0">
+            <div class="modal-body p-5">
+  
+                
+                <div class="main-content">
+                    
+                    <a href="#" class="close-btn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa fa-times-circle"></i></span></span>
+                    </a>
+
+                    <span class="waiting mr-1">Sedang diproses</span>
+                    <b class="text-center">Permohonan Dalam Proses</b>
+                    <p class="mt-3">
+                        Sila tunggu sebentar.<br>
+                        Proses permohonan akan mengambil masa dalam <b>1-2 minggu</b>
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--Ditolak (tidak lengkap)-->
+    <div class="modal fade" id="rejectedModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content rounded-0">
+            <div class="modal-body p-5">
+  
+                
+                <div class="main-content">
+                    
+                    <a href="#" class="close-btn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa fa-times-circle"></i></span></span>
+                    </a>
+
+                    <span class="rejected mr-1">Ditolak</span>
+                    <b class="text-center">Maklumat Tidak Lengkap</b>
+                    <p class="mt-3 mb-4">
+                        Sila lengkapkan maklumat-maklumat yang diperlukan sebelum <b>14/5/2022</b>.<br><br>
+                        Jika maklumat tidak serahkan sebelum tarikh yang dinyatakan, staf hendaklah melakukan permohonan baharu.
+                    </p>
+                 
+                    <div class="d-flex">
+                        <div class="mx-auto">
+                        <a href="#" class="main-button">Edit Borang Permohonan</a>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--Ditolak (todak layak)-->
+    <div class="modal fade" id="rejected2Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content rounded-0">
+            <div class="modal-body p-5">
+  
+                
+                <div class="main-content">
+                    
+                    <a href="#" class="close-btn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa fa-times-circle"></i></span></span>
+                    </a>
+
+                    <span class="rejected mr-1">Ditolak</span>
+                    <b class="text-center">Tidak Layak</b>
+                    <p class="mt-3 mb-4">
+                        Anda tidak memenuhi kriteria untuk menerima bantuan ini.<br><br>
+                        <b>Sebab: </b>Umur anak melebihi had umur<br>
+                        <b>Kriteria: </b>Anak ahli yang layak berumur 21 tahun dan ke bawah
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Modal End ***** -->
+
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright">Copyright &copy; 2021 eBantuan UM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
