@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
 
-    <title>Softy Pinko - Bootstrap 4.0 Theme</title>
+    <title>eBantuan UM</title>
 <!--
 SOFTY PINKO
 https://templatemo.com/tm-535-softy-pinko
@@ -27,38 +27,43 @@ https://templatemo.com/tm-535-softy-pinko
     <body>
     
     <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="jumper">
             <div></div>
             <div></div>
             <div></div>
         </div>
-    </div>  
+    </div>   -->
     <!-- ***** Preloader End ***** -->
-    
-    
+
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
+    
+    <header class="header-area header-sticky ">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="#" class="logo">
-                            <img src="assets/images/logo.png" alt="Softy Pinko"/>
+                            <h4 style="color:white">e<b>Bantuan</b> UM</h4>
                         </a>
                         <!-- ***** Logo End ***** -->
+
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li><a href="#welcome" class="active">Home</a></li>
-                            <li><a href="#features">Bantuan</a></li>
-                            <li><a href="#work-process">Status</a></li>
-                            <li><a href="#contact-us">Contact Us</a></li>
-                            <li><a href="#blog">Logout</a></li>
+                            <li><a href="homepage.html">Utama</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                  Servis
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item active" href="tabungKebajikan.html">Tabung Kebajikan Kakitangan</a>
+                                  <a class="dropdown-item" href="#">Zamalah</a>
+                                </div>
+                              </li>
+                            <li class="nav-status"><a href="applicationStatus.html">Status Aplikasi</a></li>
+                            <li><a href="login.html"><i class="fa fa-sign-out mr-2" aria-hidden="true"></i>Log Keluar</a></li>
                         </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
                         <!-- ***** Menu End ***** -->
                     </nav>
                 </div>
@@ -67,157 +72,96 @@ https://templatemo.com/tm-535-softy-pinko
     </header>
     <!-- ***** Header Area End ***** -->
 
-    <!-- ***** Welcome Area Start ***** -->
+    <!-- ***** Header Background Start ***** -->
     <div class="welcome-area" id="welcome">
 
         <!-- ***** Header Text Start ***** -->
         <div class="header-text">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12" style="color: black;">
-                        <h1 style="color: black;">Zamalah</h1>
-                        <p style= "color: black;">Bantuan ini hanya terbuka kepada ahli Zamalah sahaja. Sila daftar sekarang!</p>
-                        <a href="e-Keahlian.html" class="main-button-slider">Daftar Sekarang!</a>
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- ***** Header Text End ***** -->
     </div>
-    <!-- ***** Welcome Area End ***** -->
-    
-    <!-- ***** Features Big Item Start ***** -->
-    <div class="section padding-bottom-10">
+    <!-- ***** Header Background End ***** -->
+
+    <!-- ***** Bantuan Start***** -->
+    <div class="login-feature">
         <div class="container">
-            <div class="row">
-                <div class="col-md-9">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Bantuan Pendidikan</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
-                      <a href="Bantuan Pendidikan.html" class="main-button">Mohon Sekarang</a>
+            <div class="" style="width:80%; margin: auto;">
+                <div class="login-title mt-4"><h1><strong>Zamalah</strong></h1></div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="bantuan-desc p-5">
+                          <h5 class="bantuan-title mb-4">Bantuan Pendidikan</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
+                          <a href="Bantuan Pendidikan.html" class="main-button">Mohon Sekarang</a>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Survey</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
-                      <a href="#" class="main-button">Mohon Sekarang</a>
+                    <div class="col-md-4">
+                        <div class="bantuan-desc p-5">
+                            <h5 class="bantuan-title mb-4 center">e-Keahlian Zamalah</h5>
+                            <p class="card-text">Bantuan in hanya terbuka kepada ahli Zamalah sahaja.</p><br>
+                            <a href="e-Keahlian.html" class="main-button">Daftar sekarang</a>
+                        </div>
                     </div>
-                  </div>
                 </div>
-            </div>
-            <div class="row  mt-2">
-                <div class="col-md-9">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Bantuan Kemalangan</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
-                      <a href="#" class="main-button">Mohon Sekarang</a>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="bantuan-desc p-5">
+                          <h5 class="bantuan-title mb-4">Bantuan Kemalangan</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
+                          <a href="Bantuan Pendidikan.html" class="main-button">Mohon Sekarang</a>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Daftar Zamalah</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
-                      <a href="#" class="main-button">Mohon Sekarang</a>
+                    <div class="col-md-4">
+                        <div class="bantuan-desc p-5">
+                            <h5 class="bantuan-title mb-4">Survey</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
+                            <a href="#" class="main-button">Mohon Sekarang</a>
+                        </div>
                     </div>
-                  </div>
                 </div>
-            </div>
-            <div class="row  mt-2">
-                <div class="col-md-9">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Bantuan Alat Sokongan Pergerakan</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
-                      <a href="#" class="main-button">Mohon Sekarang</a>
-                    </div>
-                  </div>
+                <div class="bantuan-desc p-5 col-md-8">
+                    <h5 class="bantuan-title mb-4">Bantuan Alat Sokongan Pergerakan</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
+                    <a href="#" class="main-button">Mohon Sekarang</a>
                 </div>
-            </div>
-            <div class="row  mt-5">
-                <div class="col-md-9">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Bantuan Penyakit Terminal</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
-                      <a href="#" class="main-button">Mohon Sekarang</a>
-                    </div>
-                  </div>
+                <div class="bantuan-desc p-5 col-md-8 mt-5">
+                    <h5 class="bantuan-title mb-4">Bantuan Penyakit Terminal</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
+                    <a href="#" class="main-button">Mohon Sekarang</a>
                 </div>
-            </div>
-            <div class="row  mt-5">
-                <div class="col-md-9">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Bantuan Bencana</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
-                      <a href="#" class="main-button">Mohon Sekarang</a>
-                    </div>
-                  </div>
+                <div class="bantuan-desc p-5 col-md-8 mt-5">
+                    <h5 class="bantuan-title mb-4">Bantuan Bencana</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
+                    <a href="#" class="main-button">Mohon Sekarang</a>
                 </div>
-            </div>
-            <div class="row  mt-5">
-                <div class="col-md-9">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Bantuan Ehsan OKU</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
-                      <a href="#" class="main-button">Mohon Sekarang</a>
-                    </div>
-                  </div>
+                <div class="bantuan-desc p-5 col-md-8">
+                    <h5 class="bantuan-title mb-4">Bantuan Ehsan OKU</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
+                    <a href="#" class="main-button">Mohon Sekarang</a>
                 </div>
-            </div>
-            <div class="row  mt-5">
-                <div class="col-md-9">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Bantuan Persaraan</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
-                      <a href="#" class="main-button">Mohon Sekarang</a>
-                    </div>
-                  </div>
+                <div class="bantuan-desc p-5 col-md-8 mt-5">
+                    <h5 class="bantuan-title mb-4">Bantuan Persaraan</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
+                    <a href="#" class="main-button">Mohon Sekarang</a>
                 </div>
-            </div>
-            <div class="row  mt-5">
-                <div class="col-md-9">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Bantuan Pengurusan Jenazah</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
-                      <a href="#" class="main-button">Mohon Sekarang</a>
-                    </div>
-                  </div>
+                <div class="bantuan-desc p-5 col-md-8 mt-5">
+                    <h5 class="bantuan-title mb-4">Bantuan Pengurusan Jenazah</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><br>
+                    <a href="#" class="main-button">Mohon Sekarang</a>
                 </div>
+                
+
             </div>
         </div>
     </div>
-    <!-- ***** Features Big Item End ***** -->
+    <!-- ***** Bantuan End ***** -->
 
-    
-    
     <!-- ***** Footer Start ***** -->
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <ul class="social">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-lg-12">
-                    <p class="copyright">Copyright &copy; 2020 Softy Pinko Company - Design: TemplateMo</p>
+                    <p class="copyright">Copyright &copy; 2021 eBantuan UM</p>
                 </div>
             </div>
         </div>

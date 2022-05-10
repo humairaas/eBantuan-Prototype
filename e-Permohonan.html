@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
 
-    <title>Softy Pinko - Bootstrap 4.0 Theme</title>
+    <title>eBantuan UM</title>
 <!--
 SOFTY PINKO
 https://templatemo.com/tm-535-softy-pinko
@@ -43,25 +43,30 @@ https://templatemo.com/tm-535-softy-pinko
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="#" class="logo">
-                            <img src="assets/images/logo.png" alt="Softy Pinko"/>
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li><a href="Zamalah.html" class="active">Home</a></li>
-                            <li><a href="#features">Bantuan</a></li>
-                            <li><a href="#work-process">Status</a></li>
-                            <li><a href="#contact-us">Contact Us</a></li>
-                            <li><a href="#blog">Logout</a></li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
+                  <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="#" class="logo">
+                        <h4 style="color:white">e<b>Bantuan</b> UM</h4>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="homepage.html" class="active">Utama</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                              Servis
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="tabungKebajikan.html">Tabung Kebajikan Kakitangan</a>
+                              <a class="dropdown-item" href="#">Zamalah</a>
+                            </div>
+                          </li>
+                        <li class="nav-status"><a href="applicationStatus.html">Status Aplikasi</a></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out mr-2" aria-hidden="true"></i>Log Keluar</a></li>
+                    </ul>
+                    <!-- ***** Menu End ***** -->
+                  </nav>
                 </div>
                 
             </div>
@@ -69,107 +74,106 @@ https://templatemo.com/tm-535-softy-pinko
     </header>
     <!-- ***** Header Area End ***** -->
 
-    <section class="section padding-top-20 padding-bottom-0">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-8 offset-md-2">
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome">
+
+      <!-- ***** Header Text Start ***** -->
+      <div class="header-text">
+          <div class="container">
+              <div class="row">
+                  <h1 style= "font-size: xxx-large;"><strong>e-Permohonan Zamalah</strong></h1>
               </div>
-          </div>
+          </div> 
       </div>
-    </section>
+      <!-- ***** Header Text End ***** -->
+    </div>
+    <!-- ***** Welcome Area End ***** -->
 
     <!-- ***** Features Big Item Start ***** -->
     <section class="section padding-top-100 padding-bottom-10">
       <div class="container">
-        <h1 style="text-align: center;">e-Permohonan Bantuan Zamalah</h1><br>
-        <form>
-          <div class = "card" id="MaklumatDiri" style=" border-radius: 2em;">
-            <div class="card-body">
-              <h5 class="card-title">Maklumat Diri</h5>
+        <form id="contact" action="e-Permohonan.html" method="get">
+          <div class="login">
+            <h5 class="features-title" style="text-align: center;"><b>Maklumat Diri</b></h5>
+            <hr>
+            <div class="login-form">
               <div class="form-group">
-                <label for="inputNama">Nama</label>
-                <input type="text" class="form-control" id="inputNama" placeholder="Nama" readonly>
+                      <label for="inputNama">Nama</label>
+                      <input type="text" class="form-control" id="inputNama" placeholder="Nama" readonly>
               </div>
               <div class="form-row">
-                <div class="form-group col-md-4">
-                  <label for="inputK/P">No K/P (Baru) </label>
-                  <input type="text" class="form-control" id="inputK/P" readonly>
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputJantina">Jantina</label>
-                  <select id="inputJantina" class="form-control" disabled="disabled" >
-                    <option selected>Lelaki</option>
-                    <option>Perempuan</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputKahwin">Status Kahwin</label>
-                  <select id="inputKahwin" class="form-control" disabled="disabled">
-                    <option selected>Bujang</option>
-                    <option>Berkahwin</option>
-                    <option>Janda/Balu/Duda</option>
-                  </select>
-                </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputK/P">No K/P (Baru) </label>
+                        <input type="text" class="form-control" id="inputK/P" readonly>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputJantina">Jantina</label>
+                        <select id="inputJantina" class="form-control login-select" disabled="disabled" >
+                          <option selected>Lelaki</option>
+                          <option>Perempuan</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputKahwin">Status Kahwin</label>
+                        <select id="inputKahwin" class="form-control login-select" disabled="disabled">
+                          <option selected>Bujang</option>
+                          <option>Berkahwin</option>
+                          <option>Janda/Balu/Duda</option>
+                        </select>
+                      </div>
               </div>
               <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputJawatan">Jawatan(Gred)</label>
-                  <input type="text" class="form-control" id="inputJawatan" placeholder="Jawatan(Gred)" readonly>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputStaf">No. Staf</label>
-                  <input type="text" class="form-control" id="inputStaf" placeholder="No. Staf" readonly>
-                </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputJawatan">Jawatan(Gred)</label>
+                        <input type="text" class="form-control" id="inputJawatan" placeholder="Jawatan(Gred)" readonly>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputStaf">No. Staf</label>
+                        <input type="text" class="form-control" id="inputStaf" placeholder="No. Staf" readonly>
+                      </div>
               </div>
               <div class="form-group">
-                <label for="inputJabatan">Jabatan</label>
-                <input type="text" class="form-control" id="inputNama" placeholder="Nama" readonly>
+                      <label for="inputJabatan">Jabatan</label>
+                      <input type="text" class="form-control" id="inputNama" placeholder="Nama" readonly>
               </div>
               <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputEmail4">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email" readonly>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="input">Tetap/Kontrak</label>
-                  <select id="input" class="form-control" disabled="disabled">
-                    <option selected>Tetap</option>
-                    <option>Kontrak</option>
-                  </select>
-                </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email" readonly>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="input">Tetap/Kontrak</label>
+                        <select id="input" class="form-control login-select" disabled="disabled">
+                          <option selected>Tetap</option>
+                          <option>Kontrak</option>
+                        </select>
+                      </div>
               </div>
               <div class="form-row">
-                <div class="form-group col-md-4">
-                  <label for="inputHp">No Tel (Hp) </label>
-                  <input type="text" class="form-control" id="inputHp" readonly>
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputR">No Tel (R)</label>
-                  <input type="text" class="form-control" id="inputR" readonly>
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputPej">No Tel (Pej)</label>
-                  <input type="text" class="form-control" id="inputPej" readonly>
-                </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputHp">No Tel (Hp) </label>
+                        <input type="text" class="form-control" id="inputHp" readonly>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputR">No Tel (R)</label>
+                        <input type="text" class="form-control" id="inputR" readonly>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputPej">No Tel (Pej)</label>
+                        <input type="text" class="form-control" id="inputPej" readonly>
+                      </div>
               </div>
               <div class="form-group">
-                <label for="inputAlamat">Alamat</label>
-                <textarea class="form-control" id="inputAlamat" rows="3" placeholder="Readonly input here…" readonly></textarea>
+                      <label for="inputAlamat">Alamat</label>
+                      <textarea class="form-control" id="inputAlamat" rows="3" placeholder="Readonly input here…" readonly></textarea>
               </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    Saya mengesahkan maklumat di atas adalah benar.
-                  </label>
-                </div>
-              </div>
-              <a href="#" class="main-button">Seterusnya</a>
-            </div>  
+            </div>
           </div>
-          <div class = "card mt-5" id="MalumatKeahlianZamalah" style=" border-radius: 2em;">
-            <div class="card-body">
-              <h5 class="card-title">Malumat Keahlian Zamalah</h5>
+
+          <div class="login">
+            <h5 class="features-title" style="text-align: center;"><b>Maklumat Keahlian Zamalah</b></h5>
+            <hr>
+            <div class="login-form">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="inputNama">Tarikh Pendaftaran</label>
@@ -180,25 +184,17 @@ https://templatemo.com/tm-535-softy-pinko
                   <input type="text" class="form-control" id="inputHubungan" placeholder="RM" readonly>
                 </div>
               </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    Saya mengakui informasi di atas adalah benar.
-                  </label>
-                </div>
-              </div>
-              <a href="#" class="main-button">Seterusnya</a>
             </div>
           </div>
-          <div class = "card mt-5" id="JenisBantuan" style=" border-radius: 2em;">
-            <div class="card-body">
-              <h5 class="card-title">JenisBantuan</h5>               
-              <div class="form-group">
-                <div class="row">
-                  <label for="inputBantuan" class="col-form-label col-sm-2 pt-0">Bantuan</label>
-                  <div class="col-sm-10">
-                    <select id="inputBantuan" class="form-control" disabled="disabled">
+
+          <div class="login">
+            <h5 class="features-title" style="text-align: center;"><b>Jenis Bantuan</b></h5>
+            <hr>
+            <div class="login-form">
+              <div class="row">
+                <label for="inputBantuan" class="col-form-label col-4">Bantuan</label>
+                <div class="col-4">
+                    <select id="inputBantuan" class="form-control login-select">
                       <option selected>Bantuan Pendidikan</option>
                       <option>Bantuan Bencana</option>
                       <option>Bantuan Persaraan</option>
@@ -209,119 +205,77 @@ https://templatemo.com/tm-535-softy-pinko
                       <option>Bantuan Masuk Wad</option>
                       <option>Bantuan Penyakit Terminal</option>
                     </select>
-                  </div>
                 </div>
               </div>
-              <fieldset class="form-group" id="input1">
-                <div class="row">
-                  <legend class="col-form-label col-sm-2 pt-0">Pernah memohon bantuan yang sama sebelum ini?</legend>
-                  <div class="col-sm-10">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios11" value="Tidak" checked>
-                      <label class="form-check-label" for="gridRadios11">
-                        Tidak
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios13" value="Gagal">
-                      <label class="form-check-label" for="gridRadios13">
-                        Ya, tetapi tidak diluluskan
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios12" value="Ya">
-                      <label class="form-check-label" for="gridRadios12">
-                        Ya, diluluskan
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="form-row mt-2">
-                  <div class="offset-2 col-8">
-                    <input type="text" class="form-control" placeholder="Nama">
-                  </div>
-                  <div class="col-2">
-                    <input type="text" class="form-control" placeholder="Tahun">
-                  </div>
-                  
-                </div>
-              </fieldset>
-              <fieldset class="form-group" id="input2">
-                <div class="row">
-                  <legend class="col-form-label col-sm-2 pt-0">Pernah diluluskan bantuan lain sebelum ini?</legend>
-                  <div class="col-sm-10">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Tidak" checked>
-                      <label class="form-check-label" for="gridRadios1">
-                        Tidak
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="Gagal">
-                      <label class="form-check-label" for="gridRadios3">
-                        Ya, tetapi tidak diluluskan
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Ya">
-                      <label class="form-check-label" for="gridRadios2">
-                        Ya, diluluskan
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="form-row mt-2">
-                  <div class="offset-2 col-4">
-                    <input type="text" class="form-control" placeholder="Tahun">
-                  </div>
-                  <div class="col-4">
-                      <select id="inputBantuan" class="form-control">
-                        <option selected>Bantuan Pendidikan</option>
-                        <option>Bantuan Bencana</option>
-                        <option>Bantuan Persaraan</option>
-                        <option>Bantuan Kemalangan</option>
-                        <option>Bantuan Alat Sokongan Pergerakan</option>
-                        <option>Bantuan Ehsan OKU</option>
-                        <option>Bantuan Pengurusan Jenazah</option>
-                        <option>Bantuan Masuk Wad</option>
-                        <option>Bantuan Penyakit Terminal</option>
-                      </select>
-                  </div>
-                </div>
-                <div class="form-row mt-2">
-                  <div class="offset-2 col-10">
-                    <input type="text" class="form-control" placeholder="Nama">
-                  </div>
-                  
-                </div>
-                  
-               
-              </fieldset>
-              <div class="form-group mt-3">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    Saya mengesahkan maklumat di atas adalah benar.
-                  </label>
+              <div class="row mt-3">
+                <label for="Soalan1" class="col-form-label col-4">Pernah memohon bantuan yang sama sebelum ini?</label>
+                <div class="col-4">
+                    <select id="Soalan1" class="form-control login-select">
+                      <option selected>Tidak</option>
+                      <option>Ya, tetapi tidak diluluskan</option>
+                      <option>Ya, diluluskan</option>
+                    </select>
                 </div>
               </div>
-
-              <a href="#" class="main-button">Seterusnya</a>
+              <div class="row">
+                <p class="col-4">Sekiranya "Ya, diluluskan"</p>
+                <div class="col-6">
+                  <input type="text" class="form-control" placeholder="Nama">
+                </div>
+                <div class="col-2">
+                  <input type="text" class="form-control" placeholder="Tahun">
+                </div>
+              </div>
+              <div class="row mt-3">
+                <label for="Soalan2" class="col-form-label col-4">Pernah diluluskan bantuan lain sebelum ini?</label>
+                <div class="col-4">
+                    <select id="Soalan2" class="form-control login-select">
+                      <option selected>Tidak</option>
+                      <option>Ya, tetapi tidak diluluskan</option>
+                      <option>Ya, diluluskan</option>
+                    </select>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <p class="col-4">Sekiranya "Ya, diluluskan"</p>
+                <div class="col-4">
+                  <select id="inputBantuan" class="form-control login-select">
+                    <option selected>Bantuan Pendidikan</option>
+                    <option>Bantuan Bencana</option>
+                    <option>Bantuan Persaraan</option>
+                    <option>Bantuan Kemalangan</option>
+                    <option>Bantuan Alat Sokongan Pergerakan</option>
+                    <option>Bantuan Ehsan OKU</option>
+                    <option>Bantuan Pengurusan Jenazah</option>
+                    <option>Bantuan Masuk Wad</option>
+                    <option>Bantuan Penyakit Terminal</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="offset-4 col-6">
+                  <input type="text" class="form-control" placeholder="Nama">
+                </div>
+                <div class="col-2">
+                  <input type="text" class="form-control" placeholder="Tahun">
+                </div>
+              </div>
               
-            </div>
+           
+              
+              </div>
           </div>
-          <div class = "card mt-5" id="SenaraiSemakDokumenSokongan" style=" border-radius: 2em;">
-            <div class="card-body">
-              <h5 class="card-title">Senarai Semak Dokumen Sokongan</h5>
-              <table class="table">
+
+          <div class="login">
+            <h5 class="features-title" style="text-align: center;"><b>Senarai Semak Dokumen Sokongan</b></h5>
+            <hr>
+            <table class="table">
                 <thead>
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">Bantuan</th>
                     <th scope="col">Dokumen</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Muat Naik</th>
                     <th scope="col">Tick</th>
                   </tr>
                 </thead>
@@ -362,40 +316,55 @@ https://templatemo.com/tm-535-softy-pinko
                     <td><input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="..."></td>
                   </tr>
                 </tbody>
-              </table>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    Saya mengesahkan maklumat di atas adalah benar.
-                  </label>
-                </div>
-              </div>
-              <a href="#" class="main-button">Seterusnya</a>
-                
+            </table>
           </div>
 
+          <div class="login">
+            <h5 class="features-title" style="text-align: center;"><b>Pengesahan</b></h5>
+            <hr>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck" style="margin-left: 3%">
+                  Saya mengesahkan bahawa butiran di atas adalah benar.<br><br>
+                  
+                </label>
+              </div><br>
+              <a href="homepage.html" class="main-button">Hantar</a>
+              <!-- <span class="trigger-modal" data-toggle="modal" data-target="#waitingModal">Butiran</span> -->
+            </div>
           </div>
-          <div class = "card mt-5" id="Pengesahan" style=" border-radius: 2em;">
-            <div class="card-body">
-              <h5 class="card-title">Pengesahan</h5>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    Saya mengesahkan bahawa butiran di atas adalah benar dan asli.
-                  </label>
-                </div><br>
-                <a href="#" class="main-button">Hantar</a>
-              </div>
-              
-                
-          </div>
-
-          </div>
+                     
         </form>
+            
+      
+       
         
       </div>
+      <!--Sedang diproses-->
+    <div class="modal fade" id="waitingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content rounded-0">
+          <div class="modal-body p-5">
+
+              
+              <div class="main-content">
+                  
+                  <a href="#" class="close-btn" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"><i class="fa fa-times-circle"></i></span></span>
+                  </a>
+
+                  <span class="waiting mr-1">Sedang diproses</span>
+                  <b class="text-center">Permohonan Dalam Proses</b>
+                  <p class="mt-3">
+                      Sila tunggu sebentar.<br>
+                      Proses permohonan akan mengambil masa dalam <b>1-2 minggu</b>
+                  </p>
+              </div>
+          </div>
+          </div>
+      </div>
+    </div>
     </section>
     <!-- ***** Features Big Item End ***** -->
 

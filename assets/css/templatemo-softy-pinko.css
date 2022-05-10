@@ -314,7 +314,7 @@ a.main-button-slider {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #ff589e;
+  background-color: rgb(238, 206, 28);
   color: #fff;
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
@@ -324,14 +324,14 @@ a.main-button-slider {
 }
 
 a.main-button-slider:hover {
-  background-color: #8261ee;
+  background-color: #0f2666;
 }
 
 a.main-button {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #8261ee;
+  background-color: #0f2666;
   color: #fff;
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
@@ -341,7 +341,7 @@ a.main-button {
 }
 
 a.main-button:hover {
-  background-color: #ff589e;
+  background-color: rgb(238, 206, 28);
 }
 
 button.main-button {
@@ -361,7 +361,7 @@ button.main-button {
 }
 
 button.main-button:hover {
-  background-color: #ff589e;
+  background-color: rgb(238, 206, 28);
 }
 
 
@@ -376,12 +376,13 @@ header
   left: 0px;
   right: 0px;
   /* z-index: 100; */
-  height: 100px;
+  height: 65px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+  background-color: #0f2666;
+  /* background-image: linear-gradient(127deg, #a759d103 0%, #8261ee09 91%); */
   color: white;
 }
 
@@ -451,7 +452,7 @@ header
 }
 
 .dropdown-item:hover{
-  color: #ff589e !important;
+  color: gold !important;
 }
 
 .nav-link {
@@ -465,17 +466,17 @@ header
 }
 
 .nav-status:hover {
-  border: 1px solid #ff589e;
+  border: 1px solid gold;
 }
 
 .nav-status-active {
-  border: 1px solid #ff589e;
+  border: 1px solid gold;
   border-radius: 10px;
   padding: 0px;
 }
 
 .header-area .main-nav .nav li a:hover {
-  color: #ff589e;
+  color: gold;
 }
 
 .header-area .main-nav .menu-trigger {
@@ -587,7 +588,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #ff589e;
+  color: gold;
 }
 
 @media (max-width: 1200px) {
@@ -733,6 +734,81 @@ login
   background-color: rgb(239, 239, 239);
 }
 
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+
+:root {
+  --form-control-disabled: #959495;
+}
+
+input[type="checkbox"]:disabled {
+  --form-control-color: var(--form-control-disabled);
+
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
+}
+
+.form-control--disabled {
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
+}
+
+input [type="file"] {
+margin-top: 10px;
+margin-bottom: 10px; 
+  box-shadow: 0px 6px 15px black;
+  border: 1px solid grey;
+  padding: 8px;
+}
+
+
+
+
+
 /* 
 ---------------------------------------------
 Homepage
@@ -796,7 +872,7 @@ application status
 --------------------------------------------- 
 */
 .profile-page{
-  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+  background-color: #0f2666;
   color: white;
 }
 
@@ -817,7 +893,7 @@ application status
   font-size: smaller;
   border-radius: 10px;
   padding: 5px 10px;
-  background-color: #ee61cb;
+  background-color: rgb(226, 197, 33);
   color: #fff;
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
@@ -848,24 +924,24 @@ welcome
 --------------------------------------------- 
 */
 .welcome-area {
-  overflow: auto;
+  /* overflow: auto;
   background-color: #0f2666;
   border: none;
   padding: 15px 16px 60px;
   margin-bottom: -80px;
   min-height: 208px;
-  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
-/* 
+  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%); */
+
   overflow: hidden;
-  position: relative;
+  /* position: relative;  */
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+  background-image: linear-gradient(to bottom, #00000083, #00000083 91%), url(../images/umgate.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; 
-  height: 30vh; */
+  height: 50vh;
 }
 
 .app-status {
@@ -991,7 +1067,7 @@ features
 }
 
 .features-small-item:hover .icon {
-  background-color: #ff589e;
+  background-color: gold;
 }
 
 .features-small-item .icon {
@@ -1397,7 +1473,7 @@ team
   display: block;
   font-weight: 400;
   font-size: 15px;
-  color: #ff589e;
+  color: gold;
   letter-spacing: 0.25px;
 }
 
@@ -1436,7 +1512,7 @@ pricing
 }
 
 .pricing-item.active .pricing-body .price-wrapper {
-  background-color: #ff589e;
+  background-color: gold;
 }
 
 .pricing-item.active .pricing-body .price-wrapper .currency {
@@ -1573,7 +1649,7 @@ blog
 }
 
 .blog-post-thumb h3 a:hover {
-  color: #ff589e;
+  color: gold;
 }
 
 .blog-post-thumb .text {
@@ -1664,7 +1740,8 @@ footer
 --------------------------------------------- 
 */
 footer {
-  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+  /* background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%); */
+  background-color: #0f2666;
   padding-top: 30px;
 
 }
@@ -1697,13 +1774,12 @@ footer .social li a {
 }
 
 footer .social li a:hover {
-  background-color: #ff589e;
+  background-color: gold;
   color: #fff;
 }
 
 footer .copyright {
   text-align: center;
-  border-top: 1px solid rgba(250,250,250,0.2);
   margin-top: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
