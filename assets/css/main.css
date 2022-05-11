@@ -1,0 +1,265 @@
+.form-step{
+    display: none;
+}
+.form-step-active{
+    display: block;
+}
+
+/* Progressbar */
+.progressbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  counter-reset: step;
+  margin: 2rem 0 4rem;
+}
+
+.progressbar::before,
+.progress {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  background-color: #dcdcdc;
+  /* z-index: -1;  */
+} 
+
+.progress {
+  background-color: var(--primary-color);
+  width: 0%;
+  transition: 0.3s;
+}
+
+.progress-step {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.progress-step::before {
+  counter-increment: step;
+  content: counter(step);
+}
+
+.progress-step::after {
+  content: attr(data-title);
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+}
+
+.progress-step-active {
+  background-color:#0f2666;
+  color: #f3f3f3;
+  z-index: 2;
+}
+
+
+.login1-feature {
+    padding-bottom: 50px;
+    margin-top: -220px;
+    z-index: 9;
+  }
+  
+  .login1-title {
+    padding-bottom: 50px;
+    color: white;
+    text-align: center;
+  }
+  
+  .login1-label{
+    margin-left: 10px;
+  }
+  
+  .login1 {
+    /* display: block; */
+    background: #FFFFFF;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 10px;
+    padding: 30px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    margin-bottom: 90px;
+  }
+  
+  .login1-form input,
+  .login1-form textarea {
+    color: #777;
+    font-size: 14px;
+    border: 1px solid #eee;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    background-color: rgb(239, 239, 239);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-bottom: 10px;
+  }
+  
+  .login1-form textarea {
+    height: 70px;
+    resize: none;
+    padding: 20px;
+  }
+  
+  .login1-select{
+    color: #777;
+    font-size: 14px;
+    border: 1px solid #eee;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    background-color: rgb(239, 239, 239);
+  }
+  
+  input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #fff;
+    /* Not removed via appearance */
+    margin: 0;
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    
+    background-color: CanvasText;
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+  
+  input[type="checkbox"]:focus {
+    outline: max(2px, 0.15em) solid currentColor;
+    outline-offset: max(2px, 0.15em);
+  }
+  
+  :root {
+    --form-control-disabled: #959495;
+  }
+  
+  input[type="checkbox"]:disabled {
+    --form-control-color: var(--form-control-disabled);
+  
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+  }
+  
+  .form-control--disabled {
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+  }
+  
+  input [type="file"] {
+  margin-top: 10px;
+  margin-bottom: 10px; 
+    box-shadow: 0px 6px 15px black;
+    border: 1px solid grey;
+    padding: 8px;
+  }
+
+  a.main-button-slider {
+    font-size: 13px;
+    border-radius: 20px;
+    padding: 12px 20px;
+    background-color: rgb(238, 206, 28);
+    color: #fff;
+    letter-spacing: 0.25px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  
+  a.main-button-slider:hover {
+    background-color: #0f2666;
+  }
+  
+  a.main-button {
+    font-size: 13px;
+    border-radius: 20px;
+    padding: 12px 20px;
+    background-color: #0f2666;
+    color: #fff;
+    letter-spacing: 0.25px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  
+  a.main-button:hover {
+    background-color: rgb(238, 206, 28);
+  }
+  
+  button.main-button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 20px;
+    padding: 12px 20px;
+    background-color: #8261ee;
+    color: #fff;
+    letter-spacing: 0.25px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  
+  button.main-button:hover {
+    background-color: rgb(238, 206, 28);
+  }
+  
+
+  
+  
+  
+  
